@@ -1,0 +1,517 @@
+/* FUENTES TIPOGRAFICAS */
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../assets/font/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: "LeagueGothic-Regular";
+    src: url(../assets/font/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../assets/font/Montserrat-Bold.otf);
+}
+
+/* ----- paleta de coloassets usada ------ */
+:root {
+    --texto: #4c4c4c;
+    --mostaza: #f19e24;
+    --blanco: #fff;
+    --gris: rgb(187, 191, 197, 0.2);
+    --input: rgb(187, 191, 197);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    white-space: inherit;
+}
+
+.btn-enviar {
+    text-decoration: none;
+    border-radius: 37px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 1% 10%;
+    margin-bottom: 27px;
+    background: linear-gradient(to right,
+            rgb(47, 79, 79) 0%,
+            rgb(240, 255, 255) 100%);
+    box-shadow: 5px 5px 15px 0px rgb(46 61 73 / 20%);
+    background-size: 330% 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+body {
+    font-family: "Montserrat-Regular";
+    color: var(--texto);
+}
+
+/*--------- header -------------------*/
+
+header {
+    background-color: var(--blanco);
+
+    box-shadow: 0px -5px 9px 4px rgb(0 0 0 / 49%);
+    -webkit-box-shadow: 0px -5px 9px 4px rgb(0 0 0 / 49%);
+    -moz-box-shadow: 0px -5px 9px 4px rgb(0 0 0 / 49%);
+}
+
+.logo {
+    font-size: 0;
+    background: url(../assets/img/ico/logo.png) no-repeat;
+    height: 54px;
+}
+
+
+
+button:focus {
+    outline: inherit;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--texto);
+    font-family: LeagueGothic-Regular;
+    font-size: 1.5em;
+    border-bottom: 3px solid transparent;
+}
+
+h1 {
+    color: var(--texto);
+    font-size: 1.5em;
+    width: 120px;
+    height: 40px;
+    margin: 0;
+}
+
+
+
+.navbar-light .navbar-toggler {
+    border: 0;
+}
+
+/*--------- Inicio ------------------*/
+
+.carousel-inner {
+    height: 70vw;
+}
+
+h2 {
+    font-family: LeagueGothic-Regular;
+    font-size: 3.5em;
+    color: var(--texto);
+}
+
+h3 {
+    font-family: LeagueGothic-Regular;
+    font-size: 2.5em;
+    color: var(--texto);
+}
+
+.tarjeta h4,
+.tarjeta h3 {
+    font-size: 1.5em;
+    font-family: "Montserrat-Regular";
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+/* ---------------- HOME -------------*/
+.destacado {
+    background: rgb(255, 255, 255);
+    // background-image: url(../assets/img/fondo_destacado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto-card {
+    background-color: var(--gris);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    border-radius: 0.875em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.precio {
+    font-size: 1.5em;
+    font-family: "Montserrat-bold";
+    color: var(--mostaza);
+    text-align: right;
+}
+
+.divAgrCart {
+    /* z-index: 2;
+  position: absolute; */
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.btnCart {
+    color: white;
+    background-color: tomato;
+    padding: 0.5em 1em;
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px 9px rgba(187, 191, 197, 1);
+    -webkit-box-shadow: 0px 5px 15px 9px rgba(187, 191, 197, 1);
+    -moz-box-shadow: 0px 5px 15px 9px rgba(187, 191, 197, 1);
+}
+
+.white-shadow {
+    box-shadow: 0px 5px 15px 9px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 5px 15px 9px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 5px 15px 9px rgba(255, 255, 255, 0.75);
+}
+
+/*---------------- FORM validacion --------------------*/
+.theme--light.v-text-field>.v-input__control>.v-input__slot:before {
+    border-color: inherit;
+}
+
+.encuesta .verde {
+    color: #19d228 !important;
+    caret-color: #19d228 !important;
+}
+
+.encuesta .rojo {
+    color: #d23519 !important;
+    caret-color: #d23519 !important;
+}
+
+.encuesta input,
+.encuesta select {
+    border: none;
+    border-bottom: 1px solid var(--input);
+    border-radius: 0;
+    margin: auto;
+}
+
+.custom-select:focus,
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem var(--input);
+}
+
+/*---------------- Modal --------------------*/
+/* .modal-dialog {
+  pointer-events: all;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+
+}
+
+.btnCerrar {
+  background-color: var(--texto);
+  color: var(--blanco);
+}
+.btnCerrar:hover {
+  background-color: tomato;
+  color: var(--blanco);
+
+}  */
+
+
+.btnMas,
+.btnMenos {
+
+    /*	color: white;*/
+    /*	background-color: black;*/
+    width: 100%;
+    font-weight: bold;
+    /*	font-size: 1em;*/
+}
+
+.eliminar {
+    background-image: url(../assets/img/ico/eliminar.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+
+    text-indent: -99999px;
+
+    width: 2em;
+    height: 2em;
+
+}
+
+/*---------------- MARCAS --------------------*/
+/* .marcas ul li {
+  display: block;
+  text-indent: -9999px;
+  margin-top: 1em;
+  padding-top: 4.5em;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bgMarca-1 {
+  background-image: url(../assets/img/ico/nixon.svg);
+}
+
+.bgMarca-2 {
+  background-image: url(../assets/img/ico/casio.svg);
+}
+.bgMarca-3 {
+  background-image: url(../assets/img/ico/tomy.svg);
+}
+.bgMarca-4 {
+  background-image: url(../assets/img/ico/swatch.svg);
+} */
+
+/*-------------Favorito----------------------*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    display: inline-block;
+    width: 91%;
+    height: 30px;
+    padding-left: 30px;
+    background: url(../assets/img/ico/no_heart-01.svg) center right no-repeat;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+
+input[type="checkbox"]:checked+label {
+    background: url(../assets/img/ico/heart.svg) center right no-repeat;
+    width: 91%;
+    height: 30px;
+
+    padding-left: 30px;
+}
+
+/*---------------- medios de pago ---------------*/
+#mtdPago ul li {
+    margin-top: 1em;
+    padding-top: 5.5em;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    list-style: none;
+}
+
+.bgPago-1 {
+    background-image: url(../assets/img/ico/efectivo.svg);
+}
+
+.bgPago-2 {
+    background-image: url(../assets/img/ico/tranferencia.svg);
+}
+
+.bgPago-3 {
+    background-image: url(../assets/img/ico/deposito.svg);
+}
+
+.bgPago-4 {
+    background-image: url(../assets/img/ico/tarjetas.svg);
+}
+
+/* -------- footer ---------*/
+
+// .pie-pag {
+//     background: var(--texto);
+// }
+
+// .btn-redes {
+//     background-size: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     display: block;
+//     text-indent: -9999px;
+//     margin: auto;
+//     width: 1.8em;
+//     height: 1.8em;
+// }
+
+// .face {
+//     background-image: url(../assets/img/ico/facebook-f.svg);
+// }
+
+// .insta {
+//     background-image: url(../assets/img/ico/instagram.svg);
+// }
+
+// .twitter {
+//     background-image: url(../assets/img/ico/twitter.svg);
+// }
+
+/* -------- SOPORTE ---------*/
+#soporte {
+    border-radius: 0.875em;
+    overflow: hidden;
+
+    box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+    -webkit-box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+    -moz-box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+}
+
+.datos-env {
+    background-color: var(--texto);
+    color: var(--blanco);
+
+    /* border-top-right-radius: 0.875em;
+    border-bottom-right-radius: 0.875em; */
+}
+
+/* -------- CONTACTO ---------*/
+#contacto {
+    border-radius: 0.875em;
+
+    box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+    -webkit-box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+    -moz-box-shadow: 0px 4px 9px 4px rgba(123, 123, 123, 0.8);
+}
+
+.datos-contac {
+    background-color: var(--texto);
+    color: var(--blanco);
+
+    border-bottom-right-radius: 0.875em;
+    border-bottom-left-radius: 0.875em;
+}
+
+.datos-contac h3 {
+    color: var(--blanco);
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid var(--input);
+    border-radius: 0;
+    margin: auto;
+}
+
+label {
+    font-family: "Montserrat-Regular";
+    margin-bottom: 0;
+}
+
+.form-group textarea {
+    border: none;
+    border-bottom: 1px solid var(--input);
+    border-radius: 0;
+    resize: none;
+    height: 10em;
+}
+
+.btn-enviar {
+    border-radius: 0.875em;
+    background-color: var(--texto);
+    color: var(--blanco);
+}
+
+.mapa {
+    /* Corrige el espacio de abajo que genera el iframe por defecto */
+    line-height: 0;
+    width: 100vw;
+}
+
+.mapa iframe {
+    width: 100%;
+}
+
+/* ------------ ERROR 404 -----------------*/
+
+.error-404 {
+    background-image: url(../assets/img/ico/error_404_2.svg);
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    background-position: center 20px;
+
+    padding-top: 65vw;
+}
+
+.btnHome-404 {
+    border-radius: 1em;
+    font-size: 1.5em;
+    background-color: var(--texto);
+    color: var(--blanco);
+}
+
+/* ------------- VERSION TABLET ----------------- */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .carousel-inner {
+        height: 50vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+    /* ------------- INICIO ESCRITORIO ----------------- */
+    /* p{
+    font-size: 1.5em;
+  } */
+
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 2.5em;
+    }
+
+    .tarjeta h4,
+    .tarjeta h3 {
+        font-size: 1.5em;
+    }
+
+    .carousel-inner {
+        height: 30vw;
+    }
+
+    .datos-contac {
+        border-radius: 0 0.875em 0.875em 0;
+    }
+
+    .bt-button:hover {
+        background-color: var(--mostaza);
+    }
+
+    .btn-enviar:hover {
+        background-color: var(--mostaza);
+        border-color: none;
+    }
+
+    .cardi {
+        transition: transform 0.3s;
+    }
+
+    .cardi:hover {
+        transform: translateY(-15px);
+        transition: transform 0.3s;
+    }
+}

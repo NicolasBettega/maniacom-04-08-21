@@ -1,0 +1,10 @@
+Carrera: Diseño y Programación Web
+Materia: Aplicaciones para Dispositivos Móviles
+Cuatrimestre: 3
+Año: 2021
+Turno: Noche
+Comisión: A
+Alumno: Nicolás Alejandro Bettega, Costedoat Alexis
+Profesor: Mabel García
+Caracter de la entrega: Parcial Final
+
